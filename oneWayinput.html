@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One way</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        #oneWay{
+            display: flex;
+            
+            /* border: 1px dashed crimson; */
+            gap: 5px;
+            width: 90%;
+            margin: auto;
+        }
+        .InputBox{
+            border: 1px solid black;
+            display: flex;
+            width: 320px;
+            height: 45px;
+        }
+        .InputBox  input{
+            border: 0;
+        }
+        .InputBox > :first-child > p {
+            color: gray;
+            font-size: 25px;
+            align-items: center;  
+            margin: 8px 5px;
+        }
+        .InputBox label{
+            color: gray;
+            font-size: 12px;
+        }
+        .travellers label{
+            color: gray;
+            font-size: 12px;
+        }
+        .travellers{
+            border: 1px solid black;
+            display: flex;
+            width: 320px;
+        }
+        .travellers  input{
+            width: 30px;
+        }
+        #search{
+            width: 150px;
+            /* border: 1px solid black; */
+        }
+        #search button{
+            width: 100%;
+            height: 100%;
+            border: 0;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .travellers > :first-child > p {
+            color: rgb(255, 128, 9);
+            font-size: 25px;
+            align-items: center;  
+            margin: 8px 5px;
+        }
+        #oneWay > :nth-child(3) > :first-child > p {
+            color: green;
+            font-size: 25px;
+            align-items: center;  
+            margin: 8px 5px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="oneWay">
+        <div class="InputBox">
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i></p>
+                    
+            </div>
+                
+            <div>
+                <label for="">From</label>
+                <br>
+                <input type="text" placeholder="from">
+            </div>
+        </div>
+        <div class="InputBox">
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i></p>
+            </div>
+                
+            <div>
+                <label for="">To</label>
+                <br>
+                <input type="text" placeholder="to">
+            </div>
+        </div>
+        <div class="InputBox">
+            <div>
+                <p><i class="fa-solid fa-calendar-days"></i></p>
+            </div>
+                
+            <div>
+                <label for="">Depart</label>
+                <br>
+                <input type="date" >
+            </div>
+        </div>
+        <div class="travellers">
+            <div>
+                <p><i class="fa-solid fa-user-group"></i></p>
+            </div>
+                
+            <div>
+                <label>Traveller</label>
+                <br>
+                <label>adults</label>
+                <input type="number">
+                <label>seniors</label>
+                <input type="number">
+                <label>children</label>
+                <input type="number">
+            </div>
+        </div>
+        <div id="search">
+            <button>Search</button>
+        </div>
+
+    </div>
+</body>
+</html>

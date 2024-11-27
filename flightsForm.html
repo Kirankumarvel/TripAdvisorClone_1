@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/travel.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/footerstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg">
+    <title>Cheap Flights</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div id="navbar">
+      <div id="parentnav">
+        <div class="childnav">
+          <div class="search">
+            <a href="index.html"><img
+                id="logo"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div>
+            <input
+              id="input"
+              type="text"
+              placeholder="Search"
+              name="search"
+              id=""
+            />
+          </div>
+          <div></div>
+        </div>
+        <div class="icons">
+          <div id="alert">
+            <img
+              class="iconlogo"
+              src="https://cdn-icons-png.flaticon.com/128/1250/1250615.png"
+              alt="alert"
+            />
+            <h4>Review</h4>
+          </div>
+          <div id="alert">
+            <img
+              class="iconlogo"
+              src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
+              alt="alert"
+            />
+            <h4>trips</h4>
+          </div>
+          <div id="alert">
+            <img
+              class="iconlogo"
+              src="https://cdn-icons-png.flaticon.com/128/1827/1827422.png"
+              alt="alert"
+            />
+            <h4>Alerts</h4>
+          </div>
+          <div id="signIn">
+            <a href="login.html"><button id="signin">Sign in</button></a>
+          </div>
+        </div>
+      </div>
+      <div id="small">
+        <a href="hotel.html"><small>Hotels</small></a>
+        <small>Things to do</small>
+        <a href="showPage.html"><small>Restaurants</small></a>
+        <a href="flightsForm.html"><small>Fligths</small></a>
+        <small>Holiday homes</small>
+        <small>Package Holidays</small>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div id="body">
+      <div id="formSearch">
+        <h1>Find cheap flights and airline tickets</h1>
+        <div id="typeOfTravel">
+          <span id="oneWay" value="oneWay">One Way</span>
+          <span id="roundTrip" value="roundTrip">Round Trip</span>
+        </div>
+        <form>
+          <div class="inputBox">
+            <div>
+              <i
+                class="fa fa-2x fa-map-marker icon favIcon"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <div>
+              <input type="text" id="from" placeholder="From where?" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div>
+              <i
+                class="fa fa-2x fa-map-marker icon favIcon"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <div>
+              <input type="text" id="to" placeholder="To where?" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div>
+              <input type="date" id="depart" />
+            </div>
+          </div>
+
+          <div id="returnBox"></div>
+
+          <div class="inputBox">
+            <div>
+              <input type="number" id="noOftravellers" value="1" />
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div>
+              <input type="submit" id="search" value="Find Flight" />
+            </div>
+          </div>
+        </form>
+        <div id="extraOptions">
+          <div id="usableCheckBox">
+            <div>
+              <input type="checkbox" id="nonStop" />
+              <label>Prefer NonStop</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="includeNearbyAirport" />
+              <label>Include nearby airports</label>
+            </div>
+          </div>
+
+          <div class="para">
+            <p>Compare prices (in new window)</p>
+          </div>
+
+          <div class="unusableCheckBox">
+            <div>
+              <input type="checkbox" id="includeNearbyAirport" />
+              <label>Include nearby airports</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="includeNearbyAirport" />
+              <label>Include nearby airports</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="includeNearbyAirport" />
+              <label>Include nearby airports</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="includeNearbyAirport" />
+              <label>Include nearby airports</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="static">
+        <div id="div1">
+          <div>
+            <img
+              src="https://static.tacdn.com/img2/branding/homepage/messaging/icon_reviews_2x.png"
+              alt="logo1"
+            />
+            <h3>See the latest reviews</h3>
+            <p>Read airline reviews from our global traveller community</p>
+          </div>
+          <div>
+            <img
+              src="https://static.tacdn.com/img2/branding/homepage/messaging/icon_search_prices_tl_2x.png"
+              alt="logo2"
+            />
+            <h3>The lowest flight prices</h3>
+            <p>
+              Find the best flight deals from hundreds of sites with just one
+              search
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://static.tacdn.com/img2/branding/homepage/messaging/icon_flyscore_tl_2x.png"
+              alt="logo3"
+            />
+            <h3>FlyScore</h3>
+            <p>
+              Use FlyScore to compare flights, then book the one that is right
+              for you
+            </p>
+          </div>
+        </div>
+        <div id="div2">
+          <h2>Airline reviews</h2>
+        </div>
+        <div id="div3">
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/da/indigo.jpg?w=500&h=-1&s=1"
+              alt="image1"
+            />
+            <p>IndiGo</p>
+            <label>★★★★☆ </label><span> 8182 reviews</span>
+          </div>
+          <div>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/df/jet-airways.jpg"
+              alt="image2"
+            />
+            <p>Jet Airways [no longer operating]</p>
+            <label>★★★★☆ </label><span> 20182 reviews</span>
+          </div>
+          <div>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-o/16/88/be/2c/spicejet.jpg"
+              alt="image3"
+            />
+            <p>spicejet</p>
+            <label>★★★☆☆ </label><span>18182 reviews</span>
+          </div>
+          <div>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/5c/air-india-express.jpg"
+              alt="image4"
+            />
+            <p>Air India Express</p>
+            <label>★★★★☆ </label><span>10182 reviews</span>
+          </div>
+        </div>
+        <div id="div4">
+          <div>
+            <h4>Best Flight Deals</h4>
+            <p>
+              No need to shop multiple sites any more. We've already done that
+              by searching hundreds of cheap flights for you– scouring premium
+              airlines, low-cost carriers and the biggest online travel agencies
+              for the best deals. We'll even check alternate dates and nearby
+              airports to help you save money, time, even sanity on airline
+              tickets.
+            </p>
+            <h4>Flight Search Filters</h4>
+            <p>
+              Our filters make it a snap to easily find the cheap flight that's
+              right for you. Find direct flights that are nonstop, avoid early
+              departure times— or try our Best Value filter, which sorts based
+              on price, duration, and additional factors.
+            </p>
+            <h4>In-Flight Experience</h4>
+            <p>
+              Want Wi-Fi? More legroom? Or even a seat that allows you to sleep
+              perfectly flat? Tripadvisor Flights now makes it easier to find
+              the amenities that can make or break your flight. Find which
+              flights include Wi-Fi, live TV, power outlets, free baggage, and
+              more.
+            </p>
+            <h4>Aeroplane Photos</h4>
+            <p>
+              Thousands of photos from real travellers let you peek inside the
+              plane before you buy your ticket. Our airline reviews provide
+              unbiased opinions to help you select the right airline and flight
+              for your trip.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_col">
+            <p>About Tripadvisor</p>
+            <ul>
+              <li>About us</li>
+              <li>Press</li>
+              <li>Resource and Policies</li>
+              <li>Careers</li>
+              <li>Trust and Safety</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <p>Explore</p>
+            <ul>
+              <li>Write a review</li>
+              <li>Add a place</li>
+              <li>Join</li>
+              <li>Travellers' Choice</li>
+
+              <li>Help Centre</li>
+              <li>Travel Articles</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <p>Do Business With Us</p>
+            <ul>
+              <li>Owners and DMO/CVB</li>
+              <li>Business Advantages</li>
+              <li>Resource and Policies</li>
+              <li>Sponsored Placements</li>
+              <li>Access and Content API</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-container">
+          <p>Tripadvisor Sites</p>
+          <ul>
+            <li>Book tours and attraction tickets on <b>Viator</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div class="left-container">
+          <div class="left-first-container">
+            <div>
+              <img
+                id="footerlogo"
+                src="data:image/png;base64,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"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <small>© 2022 TripAdvisor LLC All rights reserved.</small> <br />
+              <a href="https://tripadvisor.mediaroom.com/in-terms-of-use"
+                >Terms of Use</a
+              >
+              <a href="https://tripadvisor.mediaroom.com/in-privacy-policy"
+                >Privacy and cookies Statement</a
+              >
+              <a href="https://www.tripadvisor.in/SiteIndex">Cookies Consent</a>
+              <a href="https://www.tripadvisor.in/SiteIndex">Site Map</a> <br />
+              <a href="https://www.tripadvisor.in/pages/service_en.html"
+                >How the site works</a
+              >
+              <a href="https://tripadvisor.mediaroom.com/IN-contact-us"
+                >Contact us</a
+              >
+            </div>
+            <div id="inputsBox">
+              <select name="₹ INR" id="">
+                <option value="₹ INR">₹ INR</option>
+              </select>
+              <select name="₹ INR" id="">
+                <option value="₹ INR">India</option>
+              </select>
+              <br />
+              <p>
+                <a href="https://www.facebook.com/Tripadvisor/"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/TripAdvisorInd"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.pinterest.com/tripadvisor/"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+                <a href="https://www.instagram.com/tripadvisor/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="left-second-container">
+            <p>
+              This is the version of our website addressed to speakers of
+              English in India. If you are a resident of another country or
+              region, please select <br />
+              the appropriate version of Tripadvisor for your country or region
+              in the drop-down menu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="scripts/travelForm.js"></script>
+<script src="scripts/navbar.js"></script>

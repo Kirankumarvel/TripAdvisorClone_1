@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg">
+    <title>Payment</title>
+  </head>
+
+  <style>
+    #parent {
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 20px;
+      width: 40%;
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input,
+    select {
+      padding: 12px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #innerDiv {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+    }
+    input[type="submit"] {
+      background-color: rgb(255, 157, 0);
+    }
+
+    #innerDiv input:last-child {
+      width: 100px;
+    }
+  </style>
+
+  <body>
+    <div id="parent">
+      <form action="">
+        <h1>Card Details</h1>
+        <label>Card Holder Name</label><br />
+        <input type="text" id="name" placeholder="Enter your name" /><br />
+        <label>Card Number</label><br />
+        <input
+          type="text"
+          id="cardno"
+          maxlength="12"
+          placeholder="Enter your card no"
+        /><br />
+
+        <div id="innerDiv">
+          <div>
+            <label>End Date</label><br />
+            <select name="endDate" id="endDate" aria-placeholder="mm">
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+
+            <select name="endDate" id="endDate" aria-placeholder="yyyy">
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+            </select>
+          </div>
+
+          <div>
+            <label>CVV</label><br />
+            <input type="text" id="cvv" placeholder="CVV" maxlength="3" />
+          </div>
+        </div>
+
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", doWork);
+  function doWork() {
+    event.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var cardno = document.getElementById("cardno").value;
+    var cvv = document.getElementById("cvv").value;
+    console.log(cardno, cvv);
+
+    if (cardno == 123456789101 && cvv == 123) {
+      alert("Enter Your OTP");
+      window.location.replace("otp.html");
+    } else {
+      alert("Invailid Card Details");
+    }
+  }
+</script>

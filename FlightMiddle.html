@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Flight</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        #main{
+            width: 84%;
+            margin: auto;
+            padding-top: 80px;
+            /* border: 1px dashed crimson; */
+        }
+
+        #div1,#div3,#div4{
+           display: grid; 
+           
+           gap: 10px;
+        }
+        #div1{
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+        #div1> div{
+            border: 1px solid rgb(178, 177, 177);
+            text-align: center;
+            padding: 0px 70px;
+        }
+        #div1> div > img{
+            width: 150px;
+            margin-top: -10%;
+        }
+        #div1 h3{
+            color: #00af87;
+        }
+        #div2{
+            margin-top: 60px ;
+            margin-bottom: 30px;
+        }
+        #div3{
+            grid-template-columns: repeat(4,1fr);
+            margin-bottom: 50px;
+            
+        }
+
+        #div3 > div > img {
+                width: 100%;
+        }
+        #div3 > div > label {
+                color: #018e6d;
+                font-size: 20px;
+        }
+        #div3 > div > p {
+                font-size: 20px;
+                margin: 5px;
+        }
+        #div3 > div > span {
+                color: rgb(101, 99, 99);
+        }
+        #div4 > div > h4{
+            margin-bottom: -15px;
+            font-size: 20px;
+
+        }
+        #div4 > div{
+            text-align: justify;
+        }
+        
+            
+            
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <Div id="div1">
+            <div>
+                <img src="https://static.tacdn.com/img2/branding/homepage/messaging/icon_reviews_2x.png" 
+                alt="logo1">
+                <h3>See the latest reviews</h3>
+                <p>Read airline reviews from our global traveller community</p>
+
+            </div>
+            <div><img src="https://static.tacdn.com/img2/branding/homepage/messaging/icon_search_prices_tl_2x.png" 
+                alt="logo2">
+                <h3>The lowest flight prices</h3>
+                <p>Find the best flight deals from hundreds of sites with just one search</p></div>
+            <div>
+                <img src="https://static.tacdn.com/img2/branding/homepage/messaging/icon_flyscore_tl_2x.png"
+                 alt="logo3">
+                 <h3>FlyScore</h3>
+                 <p>Use FlyScore to compare flights, then book the one that is right for you</p>
+            </div>
+        </Div>
+        <Div id="div2">
+            <h2>Airline reviews</h2>
+        </Div>
+        <Div id="div3">
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/da/indigo.jpg?w=500&h=-1&s=1"
+                 alt="image1">
+                 <p>IndiGo</p>
+                 <label>★★★★☆ </label><span> 8182 reviews</span>
+            </div>
+            <div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/df/jet-airways.jpg"
+                 alt="image2">
+                 <p>Jet Airways [no longer operating]</p>
+                 <label>★★★★☆ </label><span> 20182 reviews</span>
+            </div>
+            <div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-o/16/88/be/2c/spicejet.jpg"
+                 alt="image3">
+                 <p>spicejet</p>
+                 <label>★★★☆☆ </label><span>18182 reviews</span>
+            </div>
+            <div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/5c/air-india-express.jpg"
+                 alt="image4">
+                 <p>Air India Express</p>
+                 <label>★★★★☆ </label><span>10182 reviews</span>
+            </div>
+        </Div> 
+        <Div id="div4">
+            <div>
+            <h4>Best Flight Deals</h4>
+            <p>No need to shop multiple sites any more. We've already done that by searching hundreds of cheap flights for you– scouring premium airlines, low-cost carriers and the biggest online travel agencies for the best deals. We'll even check alternate dates and nearby airports to help you save money, time, even sanity on airline tickets.</p>
+            <h4>Flight Search Filters</h4>
+            <p>Our filters make it a snap to easily find the cheap flight that's right for you. Find direct flights that are nonstop, avoid early departure times— or try our Best Value filter, which sorts based on price, duration, and additional factors.</p>
+            <h4>In-Flight Experience</h4>
+            <p>Want Wi-Fi? More legroom? Or even a seat that allows you to sleep perfectly flat? Tripadvisor Flights now makes it easier to find the amenities that can make or break your flight. Find which flights include Wi-Fi, live TV, power outlets, free baggage, and more.</p>
+            <h4>Aeroplane Photos</h4>
+            <p>Thousands of photos from real travellers let you peek inside the plane before you buy your ticket. Our airline reviews provide unbiased opinions to help you select the right airline and flight for your trip.</p>
+            </div>
+        </Div>
+    </div>
+</body>
+</html>

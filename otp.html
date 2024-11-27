@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg">
+    <title>OTP</title>
+
+    <style>
+      body {
+        justify-content: center;
+      }
+      #parent {
+        margin: auto;
+        width: 40%;
+        padding: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        text-align: center;
+      }
+      input[type="text"] {
+        padding: 12px;
+        width: 100%;
+        border-collapse: collapse;
+        border-inline: 2px solid #ccc;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-bottom: rgb(16, 16, 15);
+      }
+      input[type="submit"] {
+        padding: 12px;
+        width: 100%;
+        background-color: rgb(213, 134, 15);
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Enter OTP</h1>
+      <form action="">
+        <input type="text" maxlength="4" id="otp" />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", doWork);
+  function doWork() {
+    event.preventDefault();
+    var otp = document.getElementById("otp").value;
+    if (otp == 1234) {
+      alert("payment successful");
+      localStorage.setItem("userItem", JSON.stringify([]));
+    } else {
+      alert("Invailid OTP");
+    }
+  }
+</script>
