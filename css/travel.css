@@ -1,0 +1,581 @@
+.highLight {
+  border: 10px solid crimson;
+}
+
+#by {
+  width: 90%;
+  margin: auto;
+  /* background-color: gray; */
+}
+
+.fligthDetails {
+  background-color: white;
+  display: flex;
+  margin: 10px 15px;
+}
+
+.roundDetails {
+  background-color: white;
+  margin: 10px 15px;
+  display: flex;
+}
+
+.roundFligthDetails {
+  /* width: 80%; */
+  display: flex;
+  margin: auto;
+}
+
+/* .roundFligthDetails > button{
+    background-color: goldenrod;
+    border: none;
+    border-radius: 10px;
+    width: 50%; 
+    margin-left: 50px; 
+    height: 80%; 
+    padding: 10px 0px; 
+}  */
+
+.flightImage {
+  width: 7%;
+  height: 7%;
+  padding: 45px;
+}
+
+.time {
+  width: 50%;
+  /* background-color: teal; */
+  margin: 25px;
+  padding-right: 30px;
+}
+
+.duration {
+  /* background-color:aqua; */
+  width: 15%;
+  margin: 25px 35px;
+}
+
+.duration ~ h2 {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.duration ~ button {
+  width: 90px;
+  /* margin-right: 10px; */
+}
+
+.pricebox {
+  width: 15%;
+  margin: 5px 15px;
+}
+
+.pricebox > h2 {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.pricebox > button {
+  background-color: goldenrod;
+  border: none;
+  border-radius: 10px;
+  width: 160%;
+  margin-left: -50px;
+  height: 30%;
+}
+
+.roundPricebox {
+  width: 15%;
+  margin-right: 10px;
+  margin-top: 20px;
+  /* background-color: teal; */
+}
+
+.roundPricebox > button {
+  background-color: goldenrod;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 20%;
+  margin-top: 68px;
+}
+
+/* #formResult>form{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    background-color: aqua;
+    outline: none;
+    transform-origin: top left;
+}
+
+#formResult>form>div{
+    border: 1px solid black;
+    margin-right: 20px;
+    width: 100%;
+} */
+
+/* .box{
+    background-color:gainsboro;
+    display: flex;
+    height: 100px;
+    border: 2px solid teal;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    height: 80%;
+    font-weight: bolder;
+    padding-bottom: 0%;
+    border: 0px solid crimson ;
+}
+
+input:focus{
+    border: 0px;
+    outline: none;
+}
+
+#semiBox{
+    display: flex;
+}
+
+
+#typeOfTravel{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.placeholder{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.favIcon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+} */
+
+#formSearch {
+  background-image: url("https://static.tacdn.com/img2/branding/homepage/home-tab5-hero-cfh-1367x520.jpg");
+  height: 370px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+  /* background-color: brown; */
+}
+
+#formSearch > h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#formSearch > form {
+  /* background-color: aqua; */
+  display: flex;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+  margin-left: 220px;
+}
+
+#formSearch > form > .inputBox {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+#formSearch > form > .inputBox > div {
+  /* background-color: teal; */
+}
+
+#formSearch > form > .inputBox > div > input {
+  width: 85%;
+  height: 50px;
+  font-weight: bolder;
+  padding-left: 15%;
+  border: 0px;
+  border-right: 1px solid gray;
+}
+
+#formSearch > form > .inputBox > div > input:focus {
+  border: 0px;
+  outline: none;
+}
+
+#formSearch > form > .inputBox:first-child > div > input {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#formSearch > form > .inputBox:last-child > div > input {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#formSearch > form > .inputBox:last-child > div > input[type="submit"] {
+  background-color: darkgreen;
+  width: 50%;
+  color: white;
+  font-size: larger;
+  padding-left: 0px;
+  height: 52px;
+}
+
+#formSearch > form > .inputBox > div > input[type="date"] {
+  height: 52px;
+}
+
+.favIcon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#typeOfTravel {
+  /* background-color: teal; */
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 210px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+#extraOptions {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+#extraOptions > #usableCheckBox {
+  /* background-color:aqua; */
+  /* width: 80%; */
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 120px;
+}
+
+#extraOptions > .para > p {
+  font-weight: lighter;
+  font-size: small;
+}
+
+#extraOptions > .unusableCheckBox {
+  /* background-color: aqua; */
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+#results {
+  background-color: gray;
+  margin: auto;
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+#results > #content {
+  width: 50%;
+}
+
+#typeOfTravelResult {
+  /* background-color: teal; */
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  /* padding-left: 210px; */
+  padding-bottom: 20px;
+}
+
+/* deepak */
+
+/* flightForms */
+body {
+  font-family: "Roboto", sans-serif;
+}
+#static {
+  width: 84%;
+  margin: auto;
+  padding-top: 80px;
+  /* border: 1px dashed crimson; */
+}
+
+#div1,
+#div3,
+#div4 {
+  display: grid;
+
+  gap: 10px;
+}
+#div1 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#div1 > div {
+  border: 1px solid rgb(178, 177, 177);
+  text-align: center;
+  padding: 0px 70px;
+}
+#div1 > div > img {
+  width: 150px;
+  margin-top: -10%;
+}
+#div1 h3 {
+  color: #00af87;
+}
+#div2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#div3 {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+#div3 > div > img {
+  width: 100%;
+}
+#div3 > div > label {
+  color: #018e6d;
+  font-size: 20px;
+}
+#div3 > div > p {
+  font-size: 20px;
+  margin: 5px;
+}
+#div3 > div > span {
+  color: rgb(101, 99, 99);
+}
+#div4 > div > h4 {
+  /* margin-bottom: -15px; */
+  font-size: 20px;
+}
+#div4 > div {
+  text-align: justify;
+}
+
+#div4 > div > p {
+  margin-bottom: 25px;
+}
+
+/* flightResult */
+
+#formOnResult {
+  display: flex;
+  padding-bottom: 12px;
+  /* border: 1px dashed crimson; */
+  gap: 5px;
+  width: 100%;
+  margin: auto;
+}
+.InputBox {
+  border: 1px solid black;
+  display: flex;
+  width: 320px;
+  height: 45px;
+}
+.InputBox input {
+  border: 0;
+}
+.InputBox > :first-child > p {
+  color: gray;
+  font-size: 25px;
+  align-items: center;
+  margin: 8px 5px;
+}
+.InputBox label {
+  color: gray;
+  font-size: 12px;
+}
+.travellers label {
+  color: gray;
+  font-size: 12px;
+}
+.travellers {
+  border: 1px solid black;
+  display: flex;
+  width: 320px;
+}
+.travellers input {
+  border: 0;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+}
+#search {
+  width: 150px;
+  /* border: 1px solid black; */
+}
+#search button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.travellers > :first-child > p {
+  color: rgb(255, 128, 9);
+  font-size: 25px;
+  align-items: center;
+  margin: 8px 5px;
+}
+#formOnResult > :nth-child(3) > :first-child > p {
+  color: green;
+  font-size: 25px;
+  align-items: center;
+  margin: 8px 5px;
+}
+
+/* #return > :first-child > p{
+    background-color: crimson;
+    color: green;
+    font-size: 25px;
+    align-items: center;  
+    margin: 8px 5px;
+} */
+
+/* Shakti */
+@font-face {
+  font-family: TripSans;
+  src: url(TripSans-Regular.ttf);
+}
+body {
+  font-family: TripSans;
+  /* margin: 0; */
+}
+#forBacrouCo {
+  width: 100%;
+  height: fit-content;
+  background-color: #f2f2f2;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+#mainDataDiv {
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  width: 94%;
+
+  justify-content: space-between;
+}
+#leftDataDiv {
+  padding: 10px;
+  padding-bottom: 25px;
+  width: 17%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+  height: fit-content;
+}
+
+#midleDataDiv {
+  width: 53%;
+  padding: 5px;
+}
+
+#rightDataDiv {
+  width: 27%;
+  margin-top: 10px;
+}
+#leftDataDiv h2 {
+  font-family: TripSans;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+#leftDataDiv > div,
+#leftDataDiv > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#leftDataDiv input {
+  accent-color: black;
+}
+
+#leftDataDiv div p {
+  color: #828482;
+  font-size: small;
+}
+#leftDataDiv label {
+  margin-left: 5px;
+  color: #543d89;
+}
+#leftDataDiv > div {
+  margin-top: -14px;
+  margin-bottom: -14px;
+}
+#rightSideChildDiv {
+  position: sticky;
+
+  top: 0;
+}
+
+#rightSideChildDiv p {
+  font-size: smaller;
+  color: #808080;
+  padding: 5px;
+}
+
+#butonDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#butonDiv img {
+  height: 26px;
+}
+#butonDiv button {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: smaller;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+#tajDiv {
+  background-color: white;
+  height: 310px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#tajDiv img {
+  width: 100%;
+  height: 55%;
+}
+#tajDiv > div {
+  padding: 5px;
+  padding-left: 10px;
+}
+#tajDiv button {
+  padding: 12px;
+  background-color: #f2b203;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  font-weight: bold;
+}
+#tajDiv > div p {
+  font-size: medium;
+  color: black;
+}
+#tajDiv > div h2 {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,100 @@
+#logo {
+  height: 40px;
+  padding-top: 20px;
+  margin-top: 15px;
+  object-fit: cover;
+}
+
+.childnav {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#input {
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 30px;
+  border-color: silver;
+  border-width: 2px;
+  width: 100%;
+  padding: 5px;
+}
+
+#parentnav {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+}
+.icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+.iconlogo {
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+#alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* for only custom font */
+#alert > img {
+  padding-bottom: 12px;
+}
+#alert > h4 {
+  margin-top: 30px;
+}
+
+#alert:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#signin {
+  margin-top: 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+}
+#signin:hover {
+  cursor: pointer;
+}
+#small {
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 160px;
+}
+
+div small {
+  padding: 10px;
+  font-size: 15px;
+}
+
+div small:hover {
+  text-decoration: underline;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* sibghat */
+
+#small > a {
+  text-decoration: none;
+  color: black;
+}
